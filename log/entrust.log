@@ -1,0 +1,4 @@
+2016/05/31 15:59:57 main.go:15: info [hello go!]
+2016/05/31 15:59:57 config.go:10: info [LoadConfig!]
+2016/05/31 16:02:02 main.go:15: info [hello go!]
+2016/05/31 16:02:02 config.go:10: info [LoadConfig!]

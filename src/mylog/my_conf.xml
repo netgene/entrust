@@ -1,0 +1,21 @@
+<seelog  minlevel="debug" maxlevel="error">
+    <outputs formatid="format">
+        <console/>
+		
+        <filter levels="debug,info,critical,error">
+			<buffered size="10485760" flushperiod="1000">
+				<rollingfile type="size" filename="./log/Info.log" maxsize="10" archivetype = "zip"/>
+			</buffered>
+        </filter>
+
+        <filter levels="error">
+			<buffered size="1" flushperiod="0">
+				<rollingfile type="date" filename="./log/error.log" namemode = "prefix" datepattern="20060102" archivetype = "zip"/>
+			</buffered>
+        </filter>
+
+    </outputs>
+    <formats>
+		<format id="format" format="[%Date(3:04:05.000000000)][%LEV] %Msg%n"/>
+    </formats>
+</seelog>
