@@ -1,7 +1,7 @@
 package main
 
 import (
-	logger "github.com/donnie4w/go-logger"
+	logger "github.com/donnie4w/go-logger/logger"
 	"config"
 	//"fmt"
 )
